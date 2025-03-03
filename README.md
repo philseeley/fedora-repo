@@ -1,6 +1,6 @@
 # Documentation
 
-[Boat Instrument](https://philseeley.github.io/docs/boatinstrument/main.md)
+[Boat Instrument](https://philseeley.github.io/docs/boatinstrument/main.html)
 
 # Repository Setup
 
