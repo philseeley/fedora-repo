@@ -9,13 +9,13 @@ Subscribe to the Fedora repository:
 ```shell
 sudo echo if password required
 
-cat <<__EOF | sudo tee /etc/yum.repo.d/phil-seeley.repo
+cat <<__EOF | sudo tee /etc/yum.repos.d/phil-seeley.repo >/dev/null
 [phil-seeley]
 name=Phil Seeley Fedora $releasever - $basearch
-baseurl=https://philseeley.github.io/debian-ppa/fedora/$releasever/$basearch/
+baseurl=https://philseeley.github.io/fedora-repo/\$releasever/\$basearch/
 enabled=1
 gpgcheck=1
-gpgkey=https://philseeley.github.io/debian-ppa/phil.seeley.gpg.pem
+gpgkey=https://philseeley.github.io/fedora-repo/phil.seeley.gpg.pem
 __EOF
 ```
 
