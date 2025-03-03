@@ -1,6 +1,6 @@
 # Documentation
 
-TODO - [Boat Instrument](docs/boatinstrument/main.md)
+[Boat Instrument](https://philseeley.github.io/docs/boatinstrument/main.md)
 
 # Repository Setup
 
@@ -11,7 +11,7 @@ sudo echo if password required
 
 cat <<__EOF | sudo tee /etc/yum.repos.d/phil-seeley.repo >/dev/null
 [phil-seeley]
-name=Phil Seeley Fedora $releasever - $basearch
+name=Phil Seeley Fedora \$releasever - \$basearch
 baseurl=https://philseeley.github.io/fedora-repo/\$releasever/\$basearch/
 enabled=1
 gpgcheck=1
