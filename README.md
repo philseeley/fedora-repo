@@ -19,13 +19,7 @@ gpgkey=https://philseeley.github.io/fedora-repo/phil.seeley.gpg.pem
 __EOF
 ```
 
-# Installation
-
-There are two flavours of installation, one for Desktop environments and one for dedicated instruments. The latter uses flutter-pi to render directly to the console without the need for X11/Wayland.
-
-## Boat Instrument - Desktop
-
-If you are running a desktop environment.
+# Desktop Installation
 
 Fedora 41 is supported for x86_64.
 
@@ -34,8 +28,4 @@ sudo dnf install boatinstrument
 ```
 
 If using a menu driven desktop (e.g. LXDE), the Boat Instrument can be found in the Utilities menu.
-
-## Boat Instrument - flutter-pi
-
-Not currently supported on Fedora.
 
