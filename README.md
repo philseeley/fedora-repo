@@ -21,7 +21,7 @@ __EOF
 
 # Desktop Installation
 
-Fedora 41 is supported for x86_64.
+Fedora 41 and 42 are supported for x86_64.
 
 ```shell
 sudo dnf install boatinstrument
