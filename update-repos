@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Add a reference to your GPG key in ~/.rpmmacros
+# %_gpg_name Phil Seeley
+
+if [ $# -ne 1 ]
+then
+  echo "Usage: $0 <rpm dir>"
+  exit 1
+fi
+
+set -e
+
+dir=$1
+
+rpm --addsign ${dir}/*.rpm
+
+for rel in 41 42 43
+do
+  repo=$rel/x86_64/
+  mkdir -p ${repo}
+  mv ${dir}/*.fc${rel}.x86_64.rpm ${repo}
+  createrepo ${repo}
+done
+
